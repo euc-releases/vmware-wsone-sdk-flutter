@@ -21,7 +21,7 @@ This plugin works with the listed component versions.
 * Android v8.0+ / API Level 23+
 * iOS 12.0+ / Xcode 12 and 12.1
 
-## Initial Setup [TODO]
+## Initial Setup
 <medium>Please find the [Prerequisites](https://github.com/vmwareairwatchsdk/vmware-wsone-sdk-flutter/blob/master/GettingStarted.md) for using the Flutter SDK </medium>
 
 
@@ -119,12 +119,12 @@ Initialization of the SDK adds the listed features to your application, dependin
     * Restrict access to app when device is offline
     * Branding of VMware AirWatch splash screens when SDK application is launched on device
 
- ## Feature Implementation [TODO]
+ ## Feature Implementation
  Please follow document at [implementation](https://github.com/vmwareairwatchsdk/vmware-wsone-sdk-flutter/blob/master/GettingStarted.md).
 
 ## Release Notes
 First release of Workspace One SDK for React Native support.
-Latest versions of Workspace One SDKs (21.1 for iOS and Android).
+Latest versions of Workspace One SDKs (21.2 for iOS and Android).
 
 ## Workspace One SDK Documentation
 For further details about the Workspace One SDK, navigate to https://my.workspaceone.com/products/Workspace-ONE-SDK and select the required platform, SDK version and Workspace ONE UEM console version.
