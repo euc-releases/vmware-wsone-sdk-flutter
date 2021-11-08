@@ -14,7 +14,7 @@ In order to inject Workspace ONE SDK functionality into your  Flutter AWSDK App,
 ### Requirements
 
 * iOS 12.0+
-* Visual Studio Code  and Xcode 12.1
+* Visual Studio Code  and Xcode 12.5/12.5.1
 * Workspace ONE-enrolled iOS test device
 * The Workspace ONE Flutter SDK  package from pub.dev.
 * A Flutter iOS app to integrate with the Workspace ONE SDK

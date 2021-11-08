@@ -9,17 +9,18 @@ dependencies:
   flutter:
     sdk: flutter
 
-  workspaceone_sdk_flutter:^1.0.0-beta
+  workspace_one_sdk_flutter:^1.2.0
 
 ```
+
 `$  dart pub get`
 
 ## Supported Components
 This plugin works with the listed component versions.
 
-* Workspace ONE UEM Console 1907 or later
+* Workspace ONE UEM Console 2005 or later
 * Android v8.0+ / API Level 23+
-* iOS 12.0+ / Xcode 12 and 12.1
+* iOS 12.0+ / Xcode 12.5/12.5.1
 
 ## Initial Setup
 <medium>Please find the [Prerequisites](https://github.com/vmwareairwatchsdk/vmware-wsone-sdk-flutter/blob/master/GettingStarted.md) for using the Flutter SDK </medium>
@@ -27,8 +28,11 @@ This plugin works with the listed component versions.
 
 ## Additional Setup
 ### iOS
-Add following code in AppDelegate
-```objective-c
+1. Add the AWSDK through Swift Package Manager.
+Click [here](https://github.com/vmwareairwatchsdk/iOS-WorkspaceONE-SDK) for integrating the AWSDK framework through Swift Package Manager
+
+2. Add following code in AppDelegate
+```objc
 -(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
   //Add following code for posting Notification for URL
@@ -38,21 +42,24 @@ Add following code in AppDelegate
   return YES;
 }
 ```
+3. Add Post Install script in Podfile.
+
+```ruby
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+  end
+  # Add this line to get the AWSDK Swift Package from SPM
+  $workspaceone_sdk_flutter.post_install(installer)
+end
+```
+
 
 ### Android
 
-1. Add the library files location to the application build configuration
-```script
-    repositories {
-        flatDir {
-            dirs "libs"
-        }
-    }
-```
-
-2. Modify AndroidManifest.xml for Main Launcher
+1. Modify AndroidManifest.xml for Main Launcher
 ```xml
-    <activity
+     <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
@@ -123,8 +130,8 @@ Initialization of the SDK adds the listed features to your application, dependin
  Please follow document at [implementation](https://github.com/vmwareairwatchsdk/vmware-wsone-sdk-flutter/blob/master/GettingStarted.md).
 
 ## Release Notes
-First release of Workspace One SDK for React Native support.
-Latest versions of Workspace One SDKs (21.2 for iOS and Android).
+First release of Workspace One SDK for Flutter support.
+Latest versions of Workspace One SDKs (21.9 for iOS and 21.8 for Android).
 
 ## Workspace One SDK Documentation
 For further details about the Workspace One SDK, navigate to https://my.workspaceone.com/products/Workspace-ONE-SDK and select the required platform, SDK version and Workspace ONE UEM console version.
