@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -59,9 +59,11 @@ android {
         pickFirst 'lib/**/libcrypto.1.0.2.so'
         pickFirst 'lib/**/libssl.1.0.2.so'
         pickFirst 'lib/**/libsettings.so'
+        pickFirst 'lib/**/libxsw_crypto.so'
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
         exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/kotlinx-serialization-runtime.kotlin_module'
     }
 }
 
