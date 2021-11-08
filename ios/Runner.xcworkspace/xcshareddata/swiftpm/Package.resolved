@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WorkspaceOneSDK",
+        "repositoryURL": "https://github.com/vmwareairwatchsdk/iOS-WorkspaceONE-SDK",
+        "state": {
+          "branch": null,
+          "revision": "d53a5b244865eb7653f379a98e57a4a2044b9821",
+          "version": "21.9.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
