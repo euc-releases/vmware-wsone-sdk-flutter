@@ -131,7 +131,7 @@ Initialization of the SDK adds the listed features to your application, dependin
 
 ## Release Notes
 First release of Workspace One SDK for Flutter support.
-Latest versions of Workspace One SDKs (21.9 for iOS and 21.8 for Android).
+Latest versions of Workspace One SDKs (21.11 for iOS and Android).
 
 ## Workspace One SDK Documentation
 For further details about the Workspace One SDK, navigate to https://my.workspaceone.com/products/Workspace-ONE-SDK and select the required platform, SDK version and Workspace ONE UEM console version.
