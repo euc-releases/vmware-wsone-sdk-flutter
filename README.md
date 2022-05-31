@@ -9,7 +9,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  workspace_one_sdk_flutter:^22.3.0
+  workspace_one_sdk_flutter:^22.5.0
 
 ```
 
@@ -18,9 +18,9 @@ dependencies:
 ## Supported Components
 This plugin works with the listed component versions.
 
-* Workspace ONE UEM Console 2005 or later
-* Android v8.0+ / API Level 23+ 
-* iOS 12.0+ / Xcode 13/13.1/13.2.1
+* Workspace ONE UEM Console 2011 or later
+* Android v8.0+ / API Level 23+
+* iOS 13.0+ / Xcode 13.2.1 or later
 
 ## Initial Setup
 <medium>Please find the [Prerequisites](https://github.com/vmwareairwatchsdk/vmware-wsone-sdk-flutter/blob/master/GettingStarted.md) for using the Flutter SDK </medium>
@@ -130,8 +130,7 @@ Initialization of the SDK adds the listed features to your application, dependin
  Please follow document at [implementation](https://github.com/vmwareairwatchsdk/vmware-wsone-sdk-flutter/blob/master/GettingStarted.md).
 
 ## Release Notes
-First release of Workspace One SDK for Flutter support.
-Latest versions of Workspace One SDKs (22.2 for iOS and Android).
+* Latest versions of Workspace One SDKs (22.4 for iOS and 22.4 for Android).
 
 ## Workspace One SDK Documentation
 For further details about the Workspace One SDK, navigate to https://my.workspaceone.com/products/Workspace-ONE-SDK and select the required platform, SDK version and Workspace ONE UEM console version.
